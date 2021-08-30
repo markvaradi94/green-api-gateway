@@ -29,10 +29,10 @@ spring:
           uri: lb://order-service
           predicates:
             - Path=/orders/**
-        - id: java-order-service
-          uri: lb://java-order-service
+        - id: notification-service
+          uri: lb://notification-service
           predicates:
-            - Path=/java/orders/**
+            - Path=/websocket/**
 
 eureka:
   client:
